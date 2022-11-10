@@ -1,0 +1,19 @@
+public class ArrayUtils
+{
+   /**
+    * Returns an array with the elements in reversed order.
+    * @param words an array of String.
+    * @return a new array as described here.
+    */
+
+   public static String[] reverse(String[] words)
+   {
+      String[] result = new String[words.length];
+      for (int i = 0; i < words.length; i++)
+      {
+         result[i] = words[words.length - i - 1];
+      }
+      return result;
+   }
+   
+}
