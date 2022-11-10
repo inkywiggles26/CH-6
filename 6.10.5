@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class ArrayListUtil
+{
+   /**
+      Finds the positions of all strings equal to a given string 
+      in an array list of strings.
+      @param words an array list of strings
+      @param searchedWord the word to search for
+      @return an array list of all matching positions
+   */
+
+   public static ArrayList<String> wordsOfLength(ArrayList<String> words, int wordLength)
+   {
+      ArrayList<String>result=new ArrayList<String>();
+for(int i=0;i<words.size();i++)
+{
+String word=words.get(i);//get word at index i
+if(word.length()==wordLength)//if word length is equal to wordLength
+{
+result.add(word);//add word to the result arraylist
+}
+}
+return result;//return result arraylist
+   }
+
+}
