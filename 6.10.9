@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class Strings
+{
+   public static void swapFirstLast(ArrayList<String> names)
+   {
+
+      int size = names.size();
+       if(size>0){
+            String temp = names.get(0);
+            names.set(0, names.get(size - 1));
+            names.set(size -1 , temp);
+        }
+    
+
+   }
+}
