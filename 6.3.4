@@ -1,0 +1,16 @@
+public class Numbers
+{
+   public static void swapFirstLast(int[] values)
+   {
+
+       if (values.length != 0) {
+            //assign first element into a temp variable
+            int temp = values[0];
+            //assign last element into first place
+            values[0] = values[values.length - 1];
+            //assign temp element into last place
+            values[values.length - 1] = temp;
+        }/* Your code goes here */
+
+   }
+}
