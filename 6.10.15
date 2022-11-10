@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+public class ArrayListUtil
+{
+   /**
+      Removes adjacent duplicates from an array list of strings.
+      @param word an array list of strings
+   */
+   public static void removeAdjacentDuplicates(ArrayList<String> words)
+   {
+      String a,b;
+if(words.size()>1)
+{
+for (int i = 0; i < words.size()-1; i++)
+{
+a=words.get(i);
+b=words.get(i+1);
+//checking adjacent words are same
+if(a.equals(b))
+{
+words.remove(i+1);
+i=i-1;
+}
+}
+
+}
+   }
+}
